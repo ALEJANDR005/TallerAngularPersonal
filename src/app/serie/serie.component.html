@@ -1,0 +1,33 @@
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        TV Series
+      </a>
+    </div>
+  </nav>
+  <div class="container-fluid mt-5 pt-4">
+    <div class="col-6">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="h4">#</th>
+            <th class="h4">Name</th>
+            <th class="h4">Channel</th>
+            <th class="h4">Seasons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of series">
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.channel}}</td>
+            <td>{{c.seasons}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p id="promedio-temporadas" class="text-left font-weight-bold mt-4">
+      {{ promedioTemporadas }}
+    </p>
+  </div>
